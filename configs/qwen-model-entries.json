@@ -1,0 +1,60 @@
+[
+  {
+    "model_name": "Qwen3.5-2B",
+    "backend": "huggingface_local",
+    "huggingface_id": "Qwen/Qwen3.5-2B",
+    "release_date": "2025-04-29",
+    "open_weight": true,
+    "parameters": "2B",
+    "languages": ["en"],
+    "context_size": "32k",
+    "license": {
+      "name": "Apache 2.0",
+      "url": "https://www.apache.org/licenses/LICENSE-2.0"
+    },
+    "model_config": {
+      "premade_chat_template": true,
+      "eos_to_cull": "<\\|im_end\\|>",
+      "thinking": false
+    }
+  },
+  {
+    "model_name": "Qwen3.5-2B-sft",
+    "backend": "huggingface_local",
+    "huggingface_id": "models/sft/Qwen3.5-2B",
+    "release_date": "2026-06-02",
+    "open_weight": true,
+    "parameters": "2B",
+    "languages": ["en"],
+    "context_size": "32k",
+    "license": {
+      "name": "Apache 2.0",
+      "url": "https://www.apache.org/licenses/LICENSE-2.0"
+    },
+    "model_config": {
+      "premade_chat_template": true,
+      "eos_to_cull": "<\\|im_end\\|>",
+      "thinking": false
+    }
+  },
+  {
+    "model_name": "Qwen3.5-2B-sft-lora",
+    "backend": "huggingface_local",
+    "huggingface_id": "Qwen/Qwen3.5-2B",
+    "release_date": "2026-06-02",
+    "open_weight": true,
+    "parameters": "2B",
+    "languages": ["en"],
+    "context_size": "32k",
+    "license": {
+      "name": "Apache 2.0",
+      "url": "https://www.apache.org/licenses/LICENSE-2.0"
+    },
+    "model_config": {
+      "peft_model": "models/sft+lora/Qwen3.5-2B",
+      "premade_chat_template": true,
+      "eos_to_cull": "<\\|im_end\\|>",
+      "thinking": false
+    }
+  }
+]

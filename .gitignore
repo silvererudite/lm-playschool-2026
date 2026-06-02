@@ -1,0 +1,27 @@
+# Upstream repos (cloned alongside; tracked in their own .git)
+playpen/
+clemcore/
+playpen-paper-2025/
+
+# Training artifacts
+models/
+playpen-eval/
+results/
+*.checkpoint
+checkpoint-*/
+
+# Logs
+*.log
+
+# Caches
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+*.egg-info/
+
+# Secrets
+key.json
+.env
+
+# OS
+.DS_Store
